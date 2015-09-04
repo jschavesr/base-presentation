@@ -246,7 +246,48 @@ H:
 
 ## Functions
 
+V:
 
+## Functions: recursive
+
+The following:
+
+```java
+/*
+Esta funcion retorna el n-simo termino de la serio de fibonacci
+*/
+int fibonacci(int n) {
+  // salida de la recursion
+  if(n == 1)
+    return 0;
+  if(n == 2)
+    return 1;
+  // avance de la recursion:
+  if( n > 2)
+    return fibonacci(n-2) + fibonacci(n-1);
+  // si n es negativo o 0
+  return -1; 
+}
+
+int squares = 5;
+
+void setup() {
+  size(720,50);
+  int w = width / squares;
+  for(int i = 0; i < squares; i++) {
+    fill(map(fibonacci(i+1), fibonacci(squares), 0, 0, 255));
+    rect(i*w,0,w,50);
+  }
+}
+```
+
+V:
+
+## Functions: recursive
+
+produces:
+
+<div id='recursion_id'></div>
 
 H:
 
