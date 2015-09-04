@@ -273,11 +273,13 @@ int squares = 5;
 
 void setup() {
   size(720,50);
+  background(255,0, 255);
   int w = width / squares;
   for(int i = 0; i < squares; i++) {
     fill(map(fibonacci(i+1), fibonacci(squares), 0, 0, 255));
     rect(i*w,0,w,50);
   }
+  noLoop();
 }
 ```
 
