@@ -246,6 +246,47 @@ H:
 
 ## Functions
 
+The following:
+
+```java
+/*
+Esta funcion retorna el n-simo termino de la serio de fibonacci
+*/
+int fibonacci(int n) {
+  int x = 0, y = 1, z = 1;
+  for (int i = 1; i < n; i++) {
+    x = y;
+    y = z;
+    z = x + y;
+  }
+  return x;
+}
+
+int squares = 5;
+
+void setup() {
+  size(720,50);
+  noLoop();
+}
+
+void draw() {
+  background(255,0, 255);
+  int w = width / squares;
+  for(int i = 0; i < squares; i++) {
+    fill(map(fibonacci(i+1), fibonacci(squares), 0, 0, 255));
+    rect(i*w,0,w,50);
+  }
+}
+```
+
+V:
+
+## Functions: recursive
+
+produces:
+
+<div id='fibonacci_id'></div>
+
 V:
 
 ## Functions: recursive
@@ -273,13 +314,16 @@ int squares = 5;
 
 void setup() {
   size(720,50);
+  noLoop();
+}
+
+void draw() {
   background(255,0, 255);
   int w = width / squares;
   for(int i = 0; i < squares; i++) {
     fill(map(fibonacci(i+1), fibonacci(squares), 0, 0, 255));
     rect(i*w,0,w,50);
   }
-  noLoop();
 }
 ```
 
@@ -303,7 +347,7 @@ float[] coswave;
 void setup() {
   size(640, 360);
   coswave = new float[width];
-  for (int i = 0; i < width; i++) {
+  for (int i = 0; i < width; i++) {s
     float amount = map(i, 0, width, 0, PI);
     coswave[i] = abs(cos(amount));
   }
@@ -312,7 +356,6 @@ void setup() {
 }
 
 void draw() {
-
   int y1 = 0;
   int y2 = height/3;
   for (int i = 0; i < width; i++) {
