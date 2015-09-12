@@ -26,10 +26,10 @@ H:
 
 # Index
 
- 1. Introduction <!-- .element: class="fragment" data-fragment-index="1"-->
- 1. Control flow <!-- .element: class="fragment" data-fragment-index="2"-->
+ 1. Introduction: Program paradigms <!-- .element: class="fragment" data-fragment-index="1"-->
+ 1. Structured programming features <!-- .element: class="fragment" data-fragment-index="2"-->
  1. Functions <!-- .element: class="fragment" data-fragment-index="3"-->
- 1. Arrays <!-- .element: class="fragment" data-fragment-index="4"-->
+ 1. Basic data structures <!-- .element: class="fragment" data-fragment-index="4"-->
  
 H:
 
@@ -79,9 +79,106 @@ for a any TM[I,O] <!-- .element: class="fragment" data-fragment-index="3"-->
             
 You may think of a UTM like a computer <!-- .element: class="fragment" data-fragment-index="4"-->
 
+V:
+
+## Introduction: Turing completeness
+
+A [programming language](https://en.wikipedia.org/wiki/Programming_language) (or a [cellular automaton](https://en.wikipedia.org/wiki/Cellular_automaton)) is said to be [Turing complete](https://en.wikipedia.org/wiki/Turing_completeness) (or "computationally universal") if it can be used to simulate any [Turing machine](https://en.wikipedia.org/wiki/Turing_machine)
+
+V:
+
+## Introduction: Program paradigms
+
+> A fundamental style of computer programming, serving as a way of building the programs
+
+V:
+
+## Introduction: Program paradigms
+### Machine code
+
+A set of [instructions](https://en.wikipedia.org/wiki/Central_processing_unit) executed directly by a computer's [central processing unit (CPU)](https://en.wikipedia.org/wiki/Central_processing_unit)
+
+Computer lowest-level programming language <!-- .element: class="fragment" data-fragment-index="1"-->
+
+Turing complete <!-- .element: class="fragment" data-fragment-index="2"-->
+
+N:
+
+Verify machine code Turing completeness, by mapping [TM informal description](https://en.wikipedia.org/wiki/Turing_machine#Informal_description) and machine code 'instructions'
+
+V:
+
+## Introduction: Program paradigms
+### Asembly language
+
+Very strong (one-to-one) correspondence between the language and the [architecture's](https://en.wikipedia.org/wiki/Computer_architecture)
+[machine code](https://en.wikipedia.org/wiki/Machine_code) [instructions](https://en.wikipedia.org/wiki/Instruction_set)
+
+Provides little or no abstraction from machine code <!-- .element: class="fragment" data-fragment-index="1"-->
+
+V:
+
+## Introduction: Program paradigms
+### Structured Programming (SP)
+
+Langs that describe, the step-by-step _procedure_ that according to _a particular programmer's view_, should be followed to solve a specific problem
+
+The efficacy and efficiency of any such solution are both therefore entirely subjective and highly dependent on that programmer's experience, inventiveness and ability <!-- .element: class="fragment" data-fragment-index="1"-->
+
+V:
+
+## Introduction: Program paradigms
+### SP: features
+
+<li class="fragment"> Turing completeness
+<li class="fragment"> Elements
+  1. Control structures: sequence, selection and iteration
+  2. Functions (subroutines, or method, or subprogram, or procedure, etc)
+  3. Blocks
+<li class="fragment"> Data structures
+  * (multi-dimensional) Arrays
+  
+V:
+
+## Introduction: Program paradigms
+### SP: examples
+
+[COBOL](https://en.wikipedia.org/wiki/COBOL)
+[FORTRAN](https://en.wikipedia.org/wiki/Fortran)
+[C](https://en.wikipedia.org/wiki/C_(programming_language))
+
+V:
+
+## Introduction: Program paradigms
+### Object Oriented Programming (OOP)
+
+Langs that described programs as a group of mutually interactive _objects_
+An object is a _data structure_ for storing user-defined _attributes_ (data or fields)), and _methods_ to manipulate them <!-- .element: class="fragment" data-fragment-index="1"-->
+
+V:
+
+## Introduction: Program paradigms
+### OOP examples
+
+[C++](https://en.wikipedia.org/wiki/C%2B%2B)
+[C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language))
+[Java](https://en.wikipedia.org/wiki/Java_(programming_language))
+[Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language))
+
+V:
+
+## Other paradigms
+
+[Declarative_programming](https://en.wikipedia.org/wiki/Declarative_programming)
+[Functional_programming](https://en.wikipedia.org/wiki/Functional_programming)
+[Logic programming](https://en.wikipedia.org/wiki/Logic_programming)
+[Symbolic programming](https://en.wikipedia.org/wiki/Symbolic_programming)
+
+Multi-paradigm <!-- .element: class="fragment" data-fragment-index="1"-->
+
 H:
 
-## Control flow
+## Control structures
 
 1. Assignments
 1. Blocks
@@ -478,10 +575,22 @@ produces:
 
 <div id='array2d_id'></div>
 
+V:
+
+### Dynamic Arrays
+
+Pending
+
+The [wikipedia article](https://en.wikipedia.org/wiki/Dynamic_array) is a good introductory reading
+
+The Processing [ArrayList](https://processing.org/reference/ArrayList.html) is a good implementation example
+
 H:
 
 ## References
 
+Language theory
+* [Introduction to automata theory, languages, and computation](http://cds.cern.ch/record/1610228)
 Stack-overflow
 * [Can all iterative algorithms be expressed recursively?](http://stackoverflow.com/questions/2093618/can-all-iterative-algorithms-be-expressed-recursively)
 * [Can every recursion be converted into iteration?](http://stackoverflow.com/questions/931762/can-every-recursion-be-converted-into-iteration)
