@@ -131,12 +131,13 @@ V:
 ### SP: features
 
 <li class="fragment"> Turing completeness
+
 <li class="fragment"> Elements
   1. Control structures: sequence, selection and iteration
-  2. Functions (subroutines, or method, or subprogram, or procedure, etc)
+  2. Functions (subroutines, method, or procedure, etc)
   3. Blocks
-<li class="fragment"> Data structures
-  * (multi-dimensional) Arrays
+
+<li class="fragment"> Data structures: (multi-dimensional) Arrays
   
 V:
 
@@ -144,8 +145,10 @@ V:
 ### SP: examples
 
 [COBOL](https://en.wikipedia.org/wiki/COBOL)
+
 [FORTRAN](https://en.wikipedia.org/wiki/Fortran)
-[C](https://en.wikipedia.org/wiki/C_(programming_language))
+
+[C](https://en.wikipedia.org/wiki/C_(programming_language)
 
 V:
 
@@ -153,7 +156,8 @@ V:
 ### Object Oriented Programming (OOP)
 
 Langs that described programs as a group of mutually interactive _objects_
-An object is a _data structure_ for storing user-defined _attributes_ (data or fields)), and _methods_ to manipulate them <!-- .element: class="fragment" data-fragment-index="1"-->
+
+<li class="fragment"> An object is a _data structure_ for storing user-defined _attributes_ (data or fields)), and _methods_ to manipulate them
 
 V:
 
@@ -161,17 +165,23 @@ V:
 ### OOP examples
 
 [C++](https://en.wikipedia.org/wiki/C%2B%2B)
-[C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language))
-[Java](https://en.wikipedia.org/wiki/Java_(programming_language))
-[Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language))
+
+[C#](https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
+
+[Java](https://en.wikipedia.org/wiki/Java_(programming_language)
+
+[Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)
 
 V:
 
 ## Other paradigms
 
-[Declarative_programming](https://en.wikipedia.org/wiki/Declarative_programming)
-[Functional_programming](https://en.wikipedia.org/wiki/Functional_programming)
+[Declarative programming](https://en.wikipedia.org/wiki/Declarative_programming)
+
+[Functional programming](https://en.wikipedia.org/wiki/Functional_programming)
+
 [Logic programming](https://en.wikipedia.org/wiki/Logic_programming)
+
 [Symbolic programming](https://en.wikipedia.org/wiki/Symbolic_programming)
 
 Multi-paradigm <!-- .element: class="fragment" data-fragment-index="1"-->
