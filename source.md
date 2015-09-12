@@ -35,8 +35,49 @@ H:
 
 ## Introduction
 
-1. Mathematical facts
-1. Program Paradigms
+1. Program paradigms
+1. Turing completeness
+
+V:
+
+## Introduction: Program paradigms
+
+Computational paradigm <!-- .element: class="fragment" data-fragment-index="2"-->
+
+Computing problem -> Programming -> Executable
+
+Program paradigm -> Style of programming <!-- .element: class="fragment" data-fragment-index="1"-->
+
+V:
+
+## Introduction: Turing Machines
+
+A [turing machine](https://en.wikipedia.org/wiki/Turing_machine) (TM[I,O]) is an 'abstract' machine such:
+
+Input string (I) -> TM -> Output (O)
+
+O: Output string & halts; or,
+   Calculates forever <!-- .element: class="fragment" data-fragment-index="1"-->
+            
+You may think of a TM like a program <!-- .element: class="fragment" data-fragment-index="3"-->
+
+V:
+
+## Introduction: Universal Turing Machine
+
+A [universal turing machine](https://en.wikipedia.org/wiki/Universal_Turing_machine) (UTM) is a TM' such that:
+
+Input string (I') -> TM' -> Output (O')
+
+where,
+
+I': [TM, I] <!-- .element: class="fragment" data-fragment-index="1"-->
+
+O': O <!-- .element: class="fragment" data-fragment-index="2"-->
+
+for a any TM[I,O] <!-- .element: class="fragment" data-fragment-index="3"-->
+            
+You may think of a UTM like a computer <!-- .element: class="fragment" data-fragment-index="4"-->
 
 H:
 
