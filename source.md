@@ -27,9 +27,8 @@ H:
 # Index
 
  1. Introduction: Program paradigms <!-- .element: class="fragment" data-fragment-index="1"-->
- 1. Structured programming features <!-- .element: class="fragment" data-fragment-index="2"-->
- 1. Functions <!-- .element: class="fragment" data-fragment-index="3"-->
- 1. Basic data structures <!-- .element: class="fragment" data-fragment-index="4"-->
+ 1. Structured programming elements <!-- .element: class="fragment" data-fragment-index="2"-->
+ 1. Basic data structures <!-- .element: class="fragment" data-fragment-index="3"-->
  
 H:
 
@@ -130,12 +129,11 @@ V:
 ## Introduction: Program paradigms
 ### SP: features
 
-<li class="fragment"> Turing completeness
+<li class="fragment"> Turing completeness (see the [structured_program_theorem](https://en.wikipedia.org/wiki/Structured_program_theorem))
 
 <li class="fragment"> Elements
-  1. Control structures: sequence, selection and iteration
+  1. Control structures: assignments, selection and iteration
   2. Functions (subroutines, method, or procedure, etc)
-  3. Blocks
 
 <li class="fragment"> Data structures: (multi-dimensional) Arrays
   
@@ -188,16 +186,18 @@ Multi-paradigm <!-- .element: class="fragment" data-fragment-index="1"-->
 
 H:
 
-## Control structures
+## Structured programming (SP) elements
 
-1. Assignments
-1. Blocks
-1. Choice
-2. Loops
+<li class="fragment"> Control structures ([statements](https://en.wikipedia.org/wiki/Statement_(computer_science))
+  1. Assignments
+  2. Selection: simple and multiple choice
+  3. Iteration
+
+<li class="fragment"> Functions (subroutines, method, or procedure, etc)
 
 V:
 
-## Control flow: assignments
+## SP elements: Assignments
 
 What is?
 
@@ -205,7 +205,7 @@ What is?
 
 V:
 
-## Control flow: assignments
+## SP elements: Assignments
 
 In order to:
 
@@ -213,9 +213,19 @@ In order to:
 
 V:
 
-## Control flow: assignments
+## SP elements: Assignments
 
-Example:
+Pseudocode:
+
+```java
+x = expr
+```
+
+V:
+
+## SP elements: Assignments
+
+Examples:
 
 ```java
 int x = 10; 
@@ -226,44 +236,25 @@ y = 32.4f;
 
 V:
 
-## Control flow: assignments
+## SP elements: Assignments
 
 <li class="fragment"> Augmented assignment: ```a = 2*a;``` can be written as: ```a *= 2;```
 <li class="fragment"> Chained assignment: ```a = b = c = d = f = 5;```
 
 V:
 
-## Control flow: blocks
+## SP elements: Simple choice
 
-The following [code](https://processing.org/reference/curlybraces.html):
-
-```java
-int[] a = { 5, 20, 25, 45, 70 };
-
-void setup() {
-  size(100, 100);
-}
-
-void draw() {
-  for (int i=0; i < a.length; i++) {
-    line(0, a[i], 50, a[i]);
-  }
-}
-```
+<figure>
+    <img height='400' src='fig/simplechoice_flowchart.png' />
+    <figcaption><a href="https://en.wikipedia.org/wiki/Conditional_(computer_programming)">An "If-then-else" flowchart</a></figcaption>
+</figure>
 
 V:
 
-## Control flow: blocks
+## SP elements: Simple choice
 
-produces:
-
-<div id='curly_id'></div>
-
-V:
-
-## Control flow: Simple choice
-
-The following [code](https://processing.org/reference/if.html):
+by example the following [code](https://processing.org/reference/if.html):
 
 ```java
 for (int i = 5; i < height; i += 5) {
@@ -275,9 +266,14 @@ for (int i = 5; i < height; i += 5) {
 }
 ```
 
+N:
+
+Blocks ({}) is a section of code which is grouped together.
+Blocks consist of one or more declarations and statements. 
+
 V:
 
-## Control flow: Simple choice
+## SP elements: Simple choice
 
 produces:
 
@@ -285,7 +281,16 @@ produces:
 
 V:
 
-## Control flow: Multiple choice
+## SP elements: Multiple choice
+
+<figure>
+    <img height='400' src='fig/switch_flowchart.png' />
+    <figcaption>A switch flowchart</figcaption>
+</figure>
+
+V:
+
+## SP elements: Multiple choice
 
 For [example](https://processing.org/reference/switch.html):
 
@@ -304,7 +309,7 @@ switch(num) {
 
 V:
 
-## Control flow: Multiple choice
+## SP elements: Multiple choice
 
 second [example](https://processing.org/reference/switch.html):
 
@@ -326,7 +331,7 @@ switch(letter) {
 
 V:
 
-## Control flow: Multiple choice
+## SP elements: Multiple choice
 
 third [example](https://processing.org/reference/switch.html):
 
@@ -350,7 +355,18 @@ switch(letter) {
 
 V:
 
-## Control flow: For loops
+## SP elements: For loops
+
+```java
+for (INITIALIZATION; CONDITION; AFTERTHOUGHT) 
+{
+    // Code for the for-loop's body goes here.
+}
+```
+
+V:
+
+## SP elements: For loops
 
 The following [code](https://processing.org/reference/for.html):
 
@@ -362,7 +378,7 @@ for (int i = 0; i < 80; i = i+5) {
 
 V:
 
-## Control flow: For loops
+## SP elements: For loops
 
 produces:
 
@@ -370,7 +386,57 @@ produces:
 
 V:
 
-## Control flow: While loops
+## SP elements: For loops
+
+The following [code](https://processing.org/reference/curlybraces.html):
+
+```java
+int[] a = { 5, 20, 25, 45, 70 };
+
+void setup() {
+  size(100, 100);
+}
+
+void draw() {
+  for (int i=0; i < a.length; i++) {
+    line(0, a[i], 50, a[i]);
+  }
+}
+```
+
+V:
+
+## SP elements: For loops
+
+produces:
+
+<div id='curly_id'></div>
+
+V:
+
+## SP elements: While loops
+
+<figure>
+    <img height='400' src='fig/while_flowchart.png' />
+    <figcaption><a href="https://en.wikipedia.org/wiki/While_loop">A while flowchart</a></figcaption>
+</figure>
+
+V:
+
+## SP elements: While loops
+
+```java
+while (true) 
+{
+    //do complicated stuff
+    if (someCondition) break;
+    //more stuff
+}
+```
+
+V:
+
+## SP elements: While loops
 
 The following [code](https://processing.org/reference/while.html):
 
@@ -384,7 +450,7 @@ while (i < 80) {
 
 V:
 
-## Control flow: While loops
+## SP elements: While loops
 
 produces:
 
