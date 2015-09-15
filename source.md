@@ -732,20 +732,3 @@ Wikipedia
 Processing
 * [API](https://processing.org/reference/)
 * [P5.js](http://p5js.org/)
-
-H:
-
-### Workshop
-
-* (level 1) <!-- .element: class="fragment" data-fragment-index="1"-->
- 1. Create a local Git repo to track some source files
- 1. Create the program of your choice
- 2. Begin to track your program source files with Git
- 1. Commit some changes
- 1. Use ```git tool``` and/or ```git difftool``` to study some changes
-* (level 2) <!-- .element: class="fragment" data-fragment-index="2"-->
- 2. Create a branch to test an experimental feature
- 3. Merge your ```test branch``` into your ```master branch```
-* (level 3) <!-- .element: class="fragment" data-fragment-index="3"-->
- 1. Share your repo online using [Git on the server](https://git-scm.com/book/en/v2/Git-on-the-Server-The-Protocols)
- Tip: you may use a [third party hosted option](https://git.wiki.kernel.org/index.php/GitHosting)
