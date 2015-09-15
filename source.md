@@ -456,9 +456,40 @@ produces:
 
 <div id='while_id'></div>
 
-H:
+V:
 
-## Functions
+## SP elements: Functions
+
+> A sequence of program instructions that perform a specific task, packaged as a unit
+
+This unit can then be used in programs wherever that particular task should be performed <!-- .element: class="fragment" data-fragment-index="1"-->
+
+Subprograms may be defined within programs, or separately in libraries that can be used by multiple programs <!-- .element: class="fragment" data-fragment-index="2"-->
+
+V:
+
+## SP elements: Functions
+### Features
+
+<li class="fragment"> Decomposing a complex programming task into simpler steps
+<li class="fragment"> Enabling reuse of code across multiple programs
+<li class="fragment"> Dividing a large programming task among various programmers, or various stages of a project
+<li class="fragment"> Hiding implementation details from users of the subroutine
+<li class="fragment"> Improving traceability
+
+V:
+
+## SP elements: Functions
+### Conventions for passing arguments
+
+|     Convention    |                           Description                           |
+|:-----------------:|:---------------------------------------------------------------:|
+| Call by value     | Argument is evaluated and copy of value is passed to subroutine |
+| Call by reference | Reference to argument, typically its address is passed          |
+
+V:
+
+## SP elements: Functions
 
 The following:
 
@@ -495,7 +526,7 @@ void draw() {
 
 V:
 
-## Functions: recursive
+## SP elements: Functions
 
 produces:
 
@@ -503,7 +534,7 @@ produces:
 
 V:
 
-## Functions: recursive
+## SP elements: Recursive functions
 
 The following:
 
@@ -543,7 +574,7 @@ void draw() {
 
 V:
 
-## Functions: recursive
+## SP elements: Recursive functions
 
 produces:
 
@@ -551,7 +582,17 @@ produces:
 
 H:
 
-## Arrays: 1D
+## Basic data structures: Arrays 1D
+
+> An array is a container object that holds a fixed number of values of a single type
+
+<figure>
+    <img height='300' src='fig/array.gif' />
+</figure>
+
+V:
+
+## Basic data structures: Arrays 1D
 
 The following [code](https://processing.org/examples/array.html):
 
@@ -596,7 +637,7 @@ void draw() {
 
 V:
 
-## Arrays: 1D
+## Basic data structures: Arrays 1D
 
 produces:
 
@@ -604,7 +645,21 @@ produces:
 
 V:
 
-## Arrays: 2D
+## Basic data structures: Arrays 2D
+
+> A multi-dimensional array is an array of array
+
+V:
+
+## Basic data structures: Arrays 2D
+
+<figure>
+    <img height='500' src='fig/array2d.png' />
+</figure>
+
+V:
+
+## Basic data structures: Arrays 2D
 
 The following [code](https://www.processing.org/examples/array2d.html):
 
@@ -645,7 +700,7 @@ void draw() {
 
 V:
 
-### Arrays: 2D
+### Basic data structures: Arrays 2D
 
 produces:
 
@@ -653,7 +708,7 @@ produces:
 
 V:
 
-### Dynamic Arrays
+### Basic data structures: Dynamic Arrays
 
 Pending
 
