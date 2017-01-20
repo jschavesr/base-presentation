@@ -218,7 +218,7 @@ V:
 
 Pseudocode:
 
-```java
+```processing
 x = expr
 ```
 
@@ -228,7 +228,7 @@ V:
 
 Examples:
 
-```java
+```processing
 int x = 10; 
 float y;
 x = 23;
@@ -257,7 +257,7 @@ V:
 
 by example the following [code](https://processing.org/reference/if.html):
 
-```java
+```processing
 for (int i = 5; i < height; i += 5) {
   stroke(255);   // Set the color to white
   if (i < 35) {  // When 'i' is less than 35...
@@ -295,7 +295,7 @@ V:
 
 For [example](https://processing.org/reference/switch.html):
 
-```java
+```processing
 int num = 1;
 
 switch(num) {
@@ -314,7 +314,7 @@ V:
 
 second [example](https://processing.org/reference/switch.html):
 
-```java
+```processing
 char letter = 'N';
 
 switch(letter) {
@@ -336,7 +336,7 @@ V:
 
 third [example](https://processing.org/reference/switch.html):
 
-```java
+```processing
 // Removing a "break" enables testing
 // for more than one value at once
 
@@ -358,7 +358,7 @@ V:
 
 ## SP elements: For loops
 
-```java
+```processing
 for (INITIALIZATION; CONDITION; AFTERTHOUGHT) 
 {
     // Code for the for-loop's body goes here.
@@ -371,7 +371,7 @@ V:
 
 The following [code](https://processing.org/reference/for.html):
 
-```java
+```processing
 for (int i = 0; i < 80; i = i+5) {
   line(30, i, 80, i);
 }
@@ -391,7 +391,7 @@ V:
 
 The following [code](https://processing.org/reference/curlybraces.html):
 
-```java
+```processing
 int[] a = { 5, 20, 25, 45, 70 };
 
 void setup() {
@@ -426,7 +426,7 @@ V:
 
 ## SP elements: While loops
 
-```java
+```processing
 while (true) 
 {
     //do complicated stuff
@@ -441,7 +441,7 @@ V:
 
 The following [code](https://processing.org/reference/while.html):
 
-```java
+```processing
 int i = 0;
 while (i < 80) {
   line(30, i, 80, i);
@@ -494,7 +494,7 @@ V:
 
 The following:
 
-```java
+```processing
 /*
 Esta funcion retorna el n-simo termino de la serio de fibonacci
 */
@@ -539,7 +539,7 @@ V:
 
 The following:
 
-```java
+```processing
 /*
 Esta funcion retorna el n-simo termino de la serio de fibonacci
 */
@@ -597,7 +597,7 @@ V:
 
 The following [code](https://processing.org/examples/array.html):
 
-```java
+```processing
 float[] coswave; 
 
 void setup() {
@@ -664,7 +664,7 @@ V:
 
 The following [code](https://www.processing.org/examples/array2d.html):
 
-```java
+```processing
 float[][] distances;
 float maxDistance;
 int spacer;
