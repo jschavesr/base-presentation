@@ -130,7 +130,7 @@ V:
 ## Introduction: Program paradigms
 ### SP: features
 
-<li class="fragment"> Turing completeness (see the [structured_program_theorem](https://en.wikipedia.org/wiki/Structured_program_theorem))
+<li class="fragment"> Turing completeness (see the [structured program theorem](https://en.wikipedia.org/wiki/Structured_program_theorem))
 
 <li class="fragment"> Elements
   1. Control structures: assignments, selection and iteration
@@ -156,7 +156,7 @@ V:
 
 Langs that described programs as a group of mutually interactive _objects_
 
-<li class="fragment"> An object is a _data structure_ for storing user-defined _attributes_ (data or fields)), and _methods_ to manipulate them
+<li class="fragment"> An object is a _data structure_ for storing user-defined _attributes_ (data or fields), and _methods_ to manipulate them
 
 V:
 
@@ -361,7 +361,7 @@ V:
 ```processing
 for (INITIALIZATION; CONDITION; AFTERTHOUGHT) 
 {
-    // Code for the for-loop's body goes here.
+    // Code for the for-loop's body goes here
 }
 ```
 
@@ -496,7 +496,7 @@ The following:
 
 ```processing
 /*
-Esta funcion retorna el n-simo termino de la serio de fibonacci
+Esta funcion retorna el n-simo termino de la serie de fibonacci
 */
 int fibonacci(int n) {
   int x = 0, y = 1, z = 1;
@@ -541,7 +541,7 @@ The following:
 
 ```processing
 /*
-Esta funcion retorna el n-simo termino de la serio de fibonacci
+Esta funcion retorna el n-simo termino de la serie de fibonacci
 */
 int fibonacci(int n) {
   // salida de la recursion
@@ -722,14 +722,18 @@ H:
 ## References
 
 Language theory
+
 * [Introduction to automata theory, languages, and computation](http://cds.cern.ch/record/1610228)
+
 Stack-overflow
 * [Can all iterative algorithms be expressed recursively?](http://stackoverflow.com/questions/2093618/can-all-iterative-algorithms-be-expressed-recursively)
 * [Can every recursion be converted into iteration?](http://stackoverflow.com/questions/931762/can-every-recursion-be-converted-into-iteration)
+
 Wikipedia
 * [Turing completeness](https://en.wikipedia.org/wiki/Turing_completeness)
 * [Programming paradigm](https://en.wikipedia.org/wiki/Programming_paradigm)
 * [Structured programming](https://en.wikipedia.org/wiki/Structured_programming)
+
 Processing
 * [API](https://processing.org/reference/)
 * [P5.js](http://p5js.org/)
