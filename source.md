@@ -65,19 +65,19 @@ V:
 
 ## Introduction: Universal Turing Machine
 
-A [universal turing machine](https://en.wikipedia.org/wiki/Universal_Turing_machine) (UTM) is a TM' such that:
-
-Input string (I') -> TM' -> Output (O')
+A [universal turing machine](https://en.wikipedia.org/wiki/Universal_Turing_machine) (UTM) is a TM'[I',O'] (input string (I') -> TM' -> Output (O')):
 
 where,
 
-I': [TM, I] <!-- .element: class="fragment" data-fragment-index="1"-->
+I': [TM,I] <!-- .element: class="fragment" data-fragment-index="1"-->
 
 O': O <!-- .element: class="fragment" data-fragment-index="2"-->
 
-for a any TM[I,O] <!-- .element: class="fragment" data-fragment-index="3"-->
+for any TM[I,O] <!-- .element: class="fragment" data-fragment-index="3"-->
+
+hence TM'[[TM,I],O] <!-- .element: class="fragment" data-fragment-index="4"-->
             
-You may think of a UTM like a computer <!-- .element: class="fragment" data-fragment-index="4"-->
+You may think of a UTM like a computer <!-- .element: class="fragment" data-fragment-index="5"-->
 
 V:
 
