@@ -603,7 +603,7 @@ float[] coswave;
 void setup() {
   size(640, 360);
   coswave = new float[width];
-  for (int i = 0; i < width; i++) {s
+  for (int i = 0; i < width; i++) {
     float amount = map(i, 0, width, 0, PI);
     coswave[i] = abs(cos(amount));
   }
