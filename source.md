@@ -202,7 +202,7 @@ V:
 
 What is?
 
-> A process in imperative programming in which different values are associated with a particular variable name as time passes
+> A process in imperative programming in which different values are associated with a particular letiable name as time passes
 
 V:
 
@@ -216,10 +216,12 @@ V:
 
 ## SP elements: Assignments
 
-Pseudocode:
-
-```processing
-x = expr
+```js
+// let is discarded for the reasons exposed in class
+let <letiable-name>;
+let <letiable-name> = <value>;
+// const is always to be preferred
+const <letiable-name> = <value>;
 ```
 
 V:
@@ -228,11 +230,11 @@ V:
 
 Examples:
 
-```processing
-int x = 10; 
-float y;
-x = 23;
-y = 32.4f;
+```js
+const x = 10; 
+let y;
+x = 23;//error
+y = 32.4;
 ```
 
 V:
@@ -257,8 +259,8 @@ V:
 
 by example the following [code](https://processing.org/reference/if.html):
 
-```processing
-for (int i = 5; i < height; i += 5) {
+```js
+for (let i = 5; i < height; i += 5) {
   stroke(255);   // Set the color to white
   if (i < 35) {  // When 'i' is less than 35...
     stroke(0);   //...set the color to black
@@ -295,15 +297,15 @@ V:
 
 For [example](https://processing.org/reference/switch.html):
 
-```processing
-int num = 1;
+```js
+let num = 1;
 
 switch(num) {
   case 0: 
-    println("Zero");  // Does not execute
+    console.log("Zero");  // Does not execute
     break;
   case 1: 
-    println("One");  // Prints "One"
+    console.log("One");  // Prints "One" on the console
     break;
 }
 ```
@@ -314,18 +316,18 @@ V:
 
 second [example](https://processing.org/reference/switch.html):
 
-```processing
-char letter = 'N';
+```js
+let letter = 'N';
 
 switch(letter) {
   case 'A': 
-    println("Alpha");  // Does not execute
+    console.log("Alpha"); // Does not execute
     break;
   case 'B': 
-    println("Bravo");  // Does not execute
+    console.log("Bravo"); // Does not execute
     break;
-  default:             // Default executes if the case labels
-    println("None");   // don't match the switch parameter
+  default:                // Default executes if the case labels
+    console.log("None");  // don't match the switch parameter
     break;
 }
 ```
@@ -336,20 +338,20 @@ V:
 
 third [example](https://processing.org/reference/switch.html):
 
-```processing
+```js
 // Removing a "break" enables testing
 // for more than one value at once
 
-char letter = 'b';
+let letter = 'b';
 
 switch(letter) {
   case 'a':
   case 'A': 
-    println("Alpha");  // Does not execute
+    console.log("Alpha");  // Does not execute
     break;
   case 'b':
   case 'B': 
-    println("Bravo");  // Prints "Bravo"
+    console.log("Bravo");  // Prints "Bravo"
     break;
 }
 ```
@@ -358,7 +360,7 @@ V:
 
 ## SP elements: For loops
 
-```processing
+```js
 for (INITIALIZATION; CONDITION; AFTERTHOUGHT) 
 {
     // Code for the for-loop's body goes here
@@ -371,8 +373,8 @@ V:
 
 The following [code](https://processing.org/reference/for.html):
 
-```processing
-for (int i = 0; i < 80; i = i+5) {
+```js
+for (let i = 0; i < 80; i = i+5) {
   line(30, i, 80, i);
 }
 ```
@@ -391,15 +393,17 @@ V:
 
 The following [code](https://processing.org/reference/curlybraces.html):
 
-```processing
-int[] a = { 5, 20, 25, 45, 70 };
-
-void setup() {
-  size(100, 100);
+```js
+let a = [5, 20, 25, 45, 70]; 
+    
+function setup() {
+  createCanvas(400, 400);
+  noLoop();
 }
-
-void draw() {
-  for (int i=0; i < a.length; i++) {
+    
+function draw() { 
+  background(255,255,0);
+  for (let i=0; i < a.length; i++) {
     line(0, a[i], 50, a[i]);
   }
 }
@@ -426,7 +430,7 @@ V:
 
 ## SP elements: While loops
 
-```processing
+```js
 while (true) 
 {
     //do complicated stuff
@@ -441,8 +445,8 @@ V:
 
 The following [code](https://processing.org/reference/while.html):
 
-```processing
-int i = 0;
+```js
+let i = 0;
 while (i < 80) {
   line(30, i, 80, i);
   i = i + 5;
@@ -474,7 +478,7 @@ V:
 
 <li class="fragment"> Decomposing a complex programming task into simpler steps
 <li class="fragment"> Enabling reuse of code across multiple programs
-<li class="fragment"> Dividing a large programming task among various programmers, or various stages of a project
+<li class="fragment"> Dividing a large programming task among letious programmers, or letious stages of a project
 <li class="fragment"> Hiding implementation details from users of the subroutine
 <li class="fragment"> Improving traceability
 
@@ -487,6 +491,7 @@ V:
 |:-----------------:|:---------------------------------------------------------------:|
 | Call by value     | Argument is evaluated and copy of value is passed to subroutine |
 | Call by reference | Reference to argument, typically its address is passed          |
+| [Call by sharing](https://en.wikipedia.org/wiki/Evaluation_strategy#Call_by_sharing) | References are passed by value |
 
 V:
 
@@ -494,13 +499,13 @@ V:
 
 The following:
 
-```processing
+```js
 /*
 Esta funcion retorna el n-simo termino de la serie de fibonacci
 */
-int fibonacci(int n) {
-  int x = 0, y = 1, z = 1;
-  for (int i = 1; i < n; i++) {
+function fibonacci(n) {
+  let x = 0, y = 1, z = 1;
+  for (let i = 1; i < n; i++) {
     x = y;
     y = z;
     z = x + y;
@@ -508,17 +513,17 @@ int fibonacci(int n) {
   return x;
 }
 
-int squares = 5;
+let squares = 5; 
 
-void setup() {
-  size(720,50);
+function setup() {
+  createCanvas(400, 400);
   noLoop();
 }
-
-void draw() {
+    
+function draw() {
   background(255,0, 255);
-  int w = width / squares;
-  for(int i = 0; i < squares; i++) {
+  let w = width / squares;
+  for(let i = 0; i < squares; i++) {
     fill(map(fibonacci(i+1), fibonacci(squares), 0, 0, 255));
     rect(i*w,0,w,50);
   }
@@ -539,11 +544,11 @@ V:
 
 The following:
 
-```processing
+```js
 /*
 Esta funcion retorna el n-simo termino de la serie de fibonacci
 */
-int fibonacci(int n) {
+function fibonacci(n) {
   // salida de la recursion
   if(n == 1)
     return 0;
@@ -553,20 +558,20 @@ int fibonacci(int n) {
   if( n > 2)
     return fibonacci(n-2) + fibonacci(n-1);
   // si n es negativo o 0
-  return -1; 
+  return -1;
 }
 
-int squares = 5;
-
-void setup() {
-  size(720,50);
+let squares = 5; 
+    
+function setup() {
+  createCanvas(400, 400);
   noLoop();
 }
-
-void draw() {
+    
+function draw() {
   background(255,0, 255);
-  int w = width / squares;
-  for(int i = 0; i < squares; i++) {
+  let w = width / squares;
+  for(let i = 0; i < squares; i++) {
     fill(map(fibonacci(i+1), fibonacci(squares), 0, 0, 255));
     rect(i*w,0,w,50);
   }
@@ -597,42 +602,40 @@ V:
 
 The following [code](https://processing.org/examples/array.html):
 
-```processing
-float[] coswave; 
-
-void setup() {
-  size(640, 360);
-  coswave = new float[width];
-  for (int i = 0; i < width; i++) {
-    float amount = map(i, 0, width, 0, PI);
+```js
+let coswave = [];
+    
+function setup() {
+  createCanvas(720, 360);
+  for (let i = 0; i < width; i++) {
+    let amount = map(i, 0, width, 0, PI);
     coswave[i] = abs(cos(amount));
   }
   background(255);
-  noLoop();
+  noLoop();       
 }
-
-void draw() {
-  int y1 = 0;
-  int y2 = height/3;
-  for (int i = 0; i < width; i++) {
+    
+function draw() {
+  let y1 = 0;
+  let y2 = height/3;
+  for (let i = 0; i < width; i+=3) {
     stroke(coswave[i]*255);
     line(i, y1, i, y2);
   }
-
+        
   y1 = y2;
   y2 = y1 + y1;
-  for (int i = 0; i < width; i++) {
+  for (let i = 0; i < width; i+=3) {
     stroke(coswave[i]*255 / 4);
     line(i, y1, i, y2);
   }
-  
+        
   y1 = y2;
   y2 = height;
-  for (int i = 0; i < width; i++) {
+  for (let i = 0; i < width; i+=3) {
     stroke(255 - coswave[i]*255);
     line(i, y1, i, y2);
-  }
-  
+  }        
 }
 ```
 
@@ -664,38 +667,37 @@ V:
 
 The following [code](https://www.processing.org/examples/array2d.html):
 
-```processing
-float[][] distances;
-float maxDistance;
-int spacer;
-
-void setup() {
-  size(640, 360);
+```js
+let distances = [];
+let maxDistance;
+let spacer;
+    
+function setup() {
+  createCanvas(720, 360);
   maxDistance = dist(width/2, height/2, width, height);
-  distances = new float[width][height];
-  for (int y = 0; y < height; y++) {
-    for (int x = 0; x < width; x++) {
-      float distance = dist(width/2, height/2, x, y);
+  for (let x = 0; x < width; x++) {
+    distances[x] = []; // create nested array
+    for (let y = 0; y < height; y++) {
+      let distance = dist(width/2, height/2, x, y);
       distances[x][y] = distance/maxDistance * 255;
     }
   }
   spacer = 10;
-  strokeWeight(6);
   noLoop();  // Run once and stop
 }
-
-void draw() {
+    
+function draw() {
   background(0);
   // This embedded loop skips over values in the arrays based on
-  // the spacer variable, so there are more values in the array
-  // than are drawn here. Change the value of the spacer variable
+  // the spacer letiable, so there are more values in the array
+  // than are drawn here. Change the value of the spacer letiable
   // to change the density of the points
-  for (int y = 0; y < height; y += spacer) {
-    for (int x = 0; x < width; x += spacer) {
+  for (let x = 0; x < width; x += spacer) {
+    for (let y = 0; y < height; y += spacer) {
       stroke(distances[x][y]);
       point(x + spacer/2, y + spacer/2);
     }
-  }
+  }        
 }
 ```
 
