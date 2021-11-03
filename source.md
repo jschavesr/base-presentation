@@ -202,7 +202,7 @@ V:
 
 What is?
 
-> A process in imperative programming in which different values are associated with a particular letiable name as time passes
+> A process in imperative programming in which different values are associated with a particular variable name as time passes
 
 V:
 
@@ -218,10 +218,10 @@ V:
 
 ```js
 // let is discarded for the reasons exposed in class
-let <letiable-name>;
-let <letiable-name> = <value>;
+let <variable-name>;
+let <variable-name> = <value>;
 // const is always to be preferred
-const <letiable-name> = <value>;
+const <variable-name> = <value>;
 ```
 
 V:
@@ -236,6 +236,30 @@ let y;
 x = 23;//error
 y = 32.4;
 ```
+
+V:
+
+## SP elements: Assignments
+
+### Type checking
+
+Use [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) to know the type of variable.
+
+```js
+console.log(typeof 42);
+// expected output: "number"
+
+console.log(typeof 'poo');
+// expected output: "string"
+
+console.log(typeof true);
+// expected output: "boolean"
+
+console.log(typeof undeclaredVariable);
+// expected output: "undefined"
+```
+
+Closely related is [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof) which will be studied once objects are introduced.
 
 V:
 
@@ -689,8 +713,8 @@ function setup() {
 function draw() {
   background(0);
   // This embedded loop skips over values in the arrays based on
-  // the spacer letiable, so there are more values in the array
-  // than are drawn here. Change the value of the spacer letiable
+  // the spacer variable, so there are more values in the array
+  // than are drawn here. Change the value of the spacer variable
   // to change the density of the points
   for (let x = 0; x < width; x += spacer) {
     for (let y = 0; y < height; y += spacer) {
@@ -708,16 +732,6 @@ V:
 produces:
 
 <div id='array2d_id'></div>
-
-V:
-
-### Basic data structures: Dynamic Arrays
-
-Pending
-
-The [wikipedia article](https://en.wikipedia.org/wiki/Dynamic_array) is a good introductory reading
-
-The Processing [ArrayList](https://processing.org/reference/ArrayList.html) is a good implementation example
 
 H:
 
