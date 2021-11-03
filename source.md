@@ -612,17 +612,17 @@ produces:
 
 H:
 
-## Basic data structures: Arrays 1D
+## Arrays
 
-> An array is a container object that holds a fixed number of values of a single type
+[excerpt from p5.js](https://p5js.org/examples/arrays-array.html)
 
-<figure>
-    <img height='300' src='fig/array.gif' />
-</figure>
+> An array is a list of data. Each piece of data in an array is identified by an index number representing its position in the array. Arrays are zero based, which means that the first element in the array is [0], the second element is [1], and so on.
+
+more details [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
 V:
 
-## Basic data structures: Arrays 1D
+## Arrays
 
 The following [code](https://processing.org/examples/array.html):
 
@@ -665,7 +665,7 @@ function draw() {
 
 V:
 
-## Basic data structures: Arrays 1D
+## Arrays
 
 produces:
 
@@ -673,21 +673,23 @@ produces:
 
 V:
 
-## Basic data structures: Arrays 2D
+## Arrays
 
 > A multi-dimensional array is an array of array
 
 V:
 
-## Basic data structures: Arrays 2D
+## Arrays
 
 <figure>
     <img height='500' src='fig/array2d.png' />
 </figure>
 
+See the [coding train](https://www.youtube.com/watch?v=OTNpiLUSiB4) tutorial
+
 V:
 
-## Basic data structures: Arrays 2D
+## Arrays
 
 The following [code](https://www.processing.org/examples/array2d.html):
 
@@ -727,7 +729,7 @@ function draw() {
 
 V:
 
-### Basic data structures: Arrays 2D
+### Arrays
 
 produces:
 
@@ -751,5 +753,4 @@ Wikipedia
 * [Structured programming](https://en.wikipedia.org/wiki/Structured_programming)
 
 Processing
-* [API](https://processing.org/reference/)
 * [P5.js](http://p5js.org/)
