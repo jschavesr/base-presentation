@@ -675,15 +675,7 @@ V:
 
 ## Arrays
 
-> A multi-dimensional array is an array of array
-
-V:
-
-## Arrays
-
-<figure>
-    <img height='500' src='fig/array2d.png' />
-</figure>
+> A multi-dimensional array is an array of arrays
 
 See the [coding train](https://www.youtube.com/watch?v=OTNpiLUSiB4) tutorial
 
