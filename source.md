@@ -217,7 +217,8 @@ V:
 ## SP elements: Assignments
 
 ```js
-// let is discarded for the reasons exposed in class
+// const should be preferred over let (unless the
+// variable is expected to change) and var never used
 let <variable-name>;
 let <variable-name> = <value>;
 // const is always to be preferred
