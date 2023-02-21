@@ -21,7 +21,8 @@ H:
 
 # Structured programming overview
 
-by some [National University of Colombia collaborators](https://github.com/orgs/objetos/people)
+by Jean Pierre Charalambos  
+Universidad Nacional de Colombia
 
 H:
 
