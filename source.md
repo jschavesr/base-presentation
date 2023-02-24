@@ -22,7 +22,9 @@ H:
 # Structured programming overview
 
 by Jean Pierre Charalambos  
-[Universidad Nacional de Colombia](https://unal.edu.co/)
+[Universidad Nacional de Colombia](https://unal.edu.co/)  
+Presentation best seen [online](https://objetos.github.io/structured_programming/)  
+See also the [source code](https://github.com/objetos/structured_programming)
 
 H:
 
